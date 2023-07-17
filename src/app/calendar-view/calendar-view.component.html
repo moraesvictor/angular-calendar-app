@@ -1,0 +1,15 @@
+<div class="calendar">
+    <div class="calendar-dates">
+      <div class="calendar-date" *ngFor="let date of calendarDates">
+        {{ date | date: 'dd' }}
+      </div>
+    </div>
+    <div class="calendar-appointments">
+      <div class="calendar-appointment" *ngFor="let appointment of appointments" cdkDrag>
+        {{ appointment.title }}
+        <button mat-icon-button color="warn" (click)="deleteAppointment(appointment)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </div>
+    </div>
+  </div>

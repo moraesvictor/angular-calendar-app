@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
+  .calendar {
+    display: flex;
+  }
+  
+  .calendar-dates {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calendar-date {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .calendar-appointments {
+    flex-grow: 1;
+    margin-left: 20px;
+  }
+  
+  .calendar-appointment {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f0f0f0;
+  }
+  
